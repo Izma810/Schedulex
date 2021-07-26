@@ -121,11 +121,11 @@ body.background{
     width:43%;;
     color: white;
     border-radius: 10px;
-    box-shadow: -10px 10px 0 var(--dark-theme);
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
 }
 .litter{
     box-shadow: -10px 10px 0 var(--white);
-    border:1px var(--dark-theme) solid;
+    box-shadow:0 2px 5px white;
 }
 .list li{
     line-height: 2.8em;
@@ -227,13 +227,13 @@ body.background{
     justify-content: center;
     text-align: center;
     margin-left:350px;
-    box-shadow: -5px 5px 0 var(--dark-theme);
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
     cursor: pointer;
     border-radius: 5px;
     margin-top:5%;
 }
 .clear{
-    box-shadow: -5px 5px 0 var(--white);
+    box-shadow:0 2px 5px white;
 }
 @media(max-width:600px){
     .to-do-list{
