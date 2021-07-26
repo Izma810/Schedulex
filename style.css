@@ -167,6 +167,7 @@ body.background{
 }
 .list li.checked span{
     overflow: hidden;
+    right:5px;
 }
 .list li.checked::before {
     content: '';
