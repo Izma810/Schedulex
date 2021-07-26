@@ -5,7 +5,7 @@ document.querySelector('.slide').addEventListener('click', () => {
     document.querySelector('.slide').classList.toggle('toggles');
     document.querySelector('body').classList.toggle('background');
     document.querySelector(".to-do-list .new-task-button").classList.toggle("new-task");
-    document.querySelector(".list li span").classList.toggle(".removing");
+    document.querySelector(".list li span").classList.toggle("removing");
     document.querySelector(".list").classList.toggle("litter");
     document.querySelector(".clear-all-button").classList.toggle("clear");
     document.querySelector(".blobby").classList.toggle("blob");
@@ -58,11 +58,8 @@ const remove = document.querySelectorAll("span");
     // Looping so that every span has a remove button
     for(let i=0; i<remove.length; i++){
         remove[i].addEventListener("click",()=>{
-            const ilist = document.querySelector("#lists")
-            ilist.style.display ="none";
             remove[i].parentElement.style.display = "none";
             console.log("Removed");
-
         });
 }
 }
