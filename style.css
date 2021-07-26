@@ -18,15 +18,17 @@ body{
     box-shadow:0 2px 5px rgba(0,0,0,.2);
     height:10%;
     padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
   
 }
 .logo{
     color:var(--white);
     font-size:30px;
-    line-height:60px;
     font-weight:900;
     text-decoration:none;
-    padding:5px 20px;
+    padding:5px 20px; 
     align-items: center;
 }
 .container{
@@ -35,7 +37,6 @@ body{
     flex-direction: column;
     background: var(--pink);
     transition: all 250ms ease-in-out;
-    margin-top: 10px;
     margin-right:10px;
 }
 .slide{

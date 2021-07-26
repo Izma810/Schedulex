@@ -11,8 +11,16 @@ document.querySelector('.slide').addEventListener('click', () => {
     document.querySelector(".blobby").classList.toggle("blob");
 });
 
+// This is basically to not display the ul originally
+
 const luist = document.querySelector("#lists");
 luist.style.display="none";
+
+// Function for refreshing test in input-box
+
+function refreshText(){
+    document.querySelector("#text-input").value = "";
+}
 
 // Function to create new list item when the add button is clicked
 
@@ -23,16 +31,16 @@ function newItem(){
     li.appendChild(x);
     if (textInput === '') {
 
-// You don't expect users to create blanks tasks, do you?
+    // You don't expect users to create blanks tasks, do you?
 
         alert("Tasks can't be blank!");
     } else {
         document.querySelector("#lists").appendChild(li);
     }
 
-//This will refresh the text value everytime 
+    //This will refresh the text value everytime 
 
-    document.querySelector("#text-input").value = "";
+    refreshText();
 
 // Adding a remove button every time a new list is added
 
@@ -47,10 +55,14 @@ function newItem(){
 
 function remove(){
 const remove = document.querySelectorAll("span");
+    // Looping so that every span has a remove button
     for(let i=0; i<remove.length; i++){
         remove[i].addEventListener("click",()=>{
+            const ilist = document.querySelector("#lists")
+            ilist.style.display ="none";
             remove[i].parentElement.style.display = "none";
             console.log("Removed");
+
         });
 }
 }
@@ -91,3 +103,4 @@ clearButton.addEventListener("click",function(event){
 
 });
 
+// Code Done :D
