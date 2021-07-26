@@ -11,6 +11,9 @@ document.querySelector('.slide').addEventListener('click', () => {
     document.querySelector(".blobby").classList.toggle("blob");
 });
 
+const luist = document.querySelector("#lists");
+luist.style.display="none";
+
 // Function to create new list item when the add button is clicked
 
 function newItem(){
@@ -67,6 +70,7 @@ ulist.addEventListener("click",function(event){
 
 document.querySelector(".new-task-button").addEventListener("click",()=>{
     console.log("New item added");
+    luist.style.display = "inherit";
     newItem();
 })
 
@@ -84,5 +88,6 @@ const ilist = document.querySelector("#lists")
 clearButton.addEventListener("click",function(event){
     ilist.style.display ="none";
     clearAll();
+
 });
 

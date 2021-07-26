@@ -83,10 +83,11 @@ body.background{
     border:2px var(--dark-theme) solid;
     text-align:center;
     transition: 0.5s;
+    border-radius: 10px;
 }
 .to-do-list input:focus{
     outline:none;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 .to-do-list .new-task-button{
     border:none;
@@ -229,6 +230,7 @@ body.background{
     box-shadow: -5px 5px 0 var(--dark-theme);
     cursor: pointer;
     border-radius: 5px;
+    margin-top:5%;
 }
 .clear{
     box-shadow: -5px 5px 0 var(--white);
