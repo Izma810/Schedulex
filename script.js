@@ -15,16 +15,21 @@ document.querySelector('.slide').addEventListener('click', () => {
 
 function newItem(){
     const li = document.createElement("li");
-    const textInput = document.getElementById("text-input").value;
+    const textInput = document.querySelector("#text-input").value;
     const x = document.createTextNode(textInput);
     li.appendChild(x);
     if (textInput === '') {
-        // You don't expect users to create blanks tasks, do you?
+
+// You don't expect users to create blanks tasks, do you?
+
         alert("Tasks can't be blank!");
     } else {
-        document.getElementById("lists").appendChild(li);
+        document.querySelector("#lists").appendChild(li);
     }
-    document.getElementById("text-input").value = "";
+
+//This will refresh the text value everytime 
+
+    document.querySelector("#text-input").value = "";
 
 // Adding a remove button every time a new list is added
 
@@ -36,6 +41,7 @@ function newItem(){
 }
 
 // Functioning of the remove button
+
 function remove(){
 const remove = document.querySelectorAll("span");
     for(let i=0; i<remove.length; i++){
@@ -55,7 +61,7 @@ ulist.addEventListener("click",function(event){
     if(event.target.tagName === "LI"){
         event.target.classList.toggle("checked");
     }
-},false);
+});
 
 // Add-Button functioning
 
@@ -74,7 +80,9 @@ function clearAll(){
 // Clearing entire list
 
 const clearButton = document.querySelector(".clear-all-button")
+const ilist = document.querySelector("#lists")
 clearButton.addEventListener("click",function(event){
+    ilist.style.display ="none";
     clearAll();
 });
 
