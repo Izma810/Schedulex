@@ -27,6 +27,7 @@ body{
     font-weight:900;
     text-decoration:none;
     padding:5px 20px;
+    align-items: center;
 }
 .container{
     float:right;
@@ -80,6 +81,12 @@ body.background{
     font-size:20px;
     position:relative;
     border:2px var(--dark-theme) solid;
+    text-align:center;
+    transition: 0.5s;
+}
+.to-do-list input:focus{
+    outline:none;
+    border-radius: 10px;
 }
 .to-do-list .new-task-button{
     border:none;
@@ -128,6 +135,7 @@ body.background{
     position:relative;
     cursor: pointer;
     transition: 0.2s;
+    margin:10px 0;
 }
 .list li:hover{
     color:#F8E2CF;
@@ -163,7 +171,6 @@ body.background{
     text-decoration: line-through;
     width:95%;
     border-radius: 30px;
-    margin:10px 0;
 
 }
 .list li.checked span{
