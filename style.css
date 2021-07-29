@@ -228,14 +228,14 @@ body.background{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left:31%;
+    margin-left:25%;
     box-shadow:0 2px 5px rgba(0,0,0,.2);
     cursor: pointer;
     border-radius: 5px;
     margin-top:5%;
 }
 .clear{
-    box-shadow:0 2px 5px white;
+    box-shadow:0 2px 3px white;
 }
 @media(max-width:600px){
     .to-do-list{
