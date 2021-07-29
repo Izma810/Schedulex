@@ -177,7 +177,8 @@ body.background{
 }
 .list li.checked span{
     overflow: hidden;
-    right:5px;
+    right:0%;
+
 }
 .list li.checked::before {
     content: '';
@@ -221,13 +222,13 @@ body.background{
 .clear-all-button{
     background:var(--pink);
     border:1px var(--dark-theme) solid;
-    height:50px;
+    height:10%;
     color:white;
-    width:100px;
+    width:10%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left:350px;
+    margin-left:31%;
     box-shadow:0 2px 5px rgba(0,0,0,.2);
     cursor: pointer;
     border-radius: 5px;
@@ -244,5 +245,8 @@ body.background{
         align-items:center;
         width:70%;
         margin-left: 12%;
+    }
+    .clear-all-button{
+        width:20%;
     }
 }
