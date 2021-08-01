@@ -170,7 +170,6 @@ body.background{
 .list li.checked {
     background: white;
     color: var(--dark-theme);
-    text-decoration: line-through;
     width:95%;
     border-radius: 30px;
 
