@@ -1,5 +1,7 @@
 // This is for Light to Dark theme toggle
 
+let tasks = [];
+
 document.querySelector('.slide').addEventListener('click', () => {
     console.log("You clicked HAWWW");
     document.querySelector('.slide').classList.toggle('toggles');
@@ -100,4 +102,4 @@ clearButton.addEventListener("click",function(event){
 
 });
 
-// Code Done :D
+// Code Done :D 
