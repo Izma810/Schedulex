@@ -1,3 +1,3 @@
 # Schedulex
 Uh it's nice but there's no backend but do check it out.<br>
-https://izma810.github.io/Schedulex/index.html
++ dare not say anything against the potatoe in bg :D
